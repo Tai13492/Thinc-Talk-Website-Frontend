@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thinc FrontEnd Website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HTML5 is completed here -->
+        
+        <!-- Margin Top and Thinc Logo -->
+        <div style="margin:10px"></div>
+        <img class="rounded mx-auto d-block img-fluid" src="img/thinclogo.png" alt="Thinc.">
+        <!-- ========================= --> 
+
+        <!-- Show all users -->
+        <h3 class="text-center mb-4"> Show all users </h3>
+        <ul id="list">
+        </ul>
+        <div class="text-center">
+            <button class="btn btn-warning" id="listButton"> Go!</button>
+        </div>
+        <hr>
+        <!-- =============== -->
+
+        <!-- Search for a user -->
+        <div style="margin:10px"> </div>
+        <h3 class="text-center mb-4"> Search for a user </h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"> Email </span>
+            </div>
+            <input type="email" class="form-control" id="myemail" placeholder="Enter an email" aria-label="Enter an integer">
+        </div>
+        <p class="text-left"> Result:
+            <div id="result"> </div>
+        </p>
+        <div class="text-center">
+            <button class="btn btn-secondary" id="searchButton"> Search </button>
+        </div>
+        <!-- ================= -->
+        <hr>
+        
+        <!-- Show image sent from backend -->
+        <h3 class="text-center mb-4"> Show image sent from back end </h3>
+        <img id = "getImage" class = "rounded mx-auto d-block img-fluid" src = "" alt = "Waiting for an image!">
+        <div style = "margin:5px"></div>
+        <div class="text-center">
+            <button class="btn btn-warning" id="getImageButton"> Get Image</button>
+        </div>
+        <hr>
+        <!-- =============== -->
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src/playground.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
